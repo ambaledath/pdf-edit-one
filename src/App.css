@@ -1,0 +1,64 @@
+.app {
+  text-align: center;
+}
+
+.pdf-editor-opts {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  background: #1e7a9f;
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  color: #888;
+}
+
+.react-pdf__Document {
+  display: flex;
+  justify-content: center;
+}
+
+#drawArea {
+  width: 612px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.drawing {
+  width: 100%;
+  height: 100%;
+}
+
+.path {
+  fill: none;
+  stroke-width: 2px;
+  stroke: #ff0000;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.page-number {
+  margin-top: 20px;
+}
+
+.page-number button {
+  margin: 0 5px;
+}
