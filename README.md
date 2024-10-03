@@ -1,6 +1,6 @@
 # React PDF Editor
 
-This is a React PDF Editor Application
+This is a React PDF Editor Application built using [React PDF](https://www.npmjs.com/package/react-pdf).
 
 ## Getting Started with Create React App
 
