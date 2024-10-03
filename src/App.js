@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import samplePDF from "./sample.pdf";
 import SinglePage from "./components/SinglePage";
 import AutoTextArea from "./components/AutoTextArea";
+import Download from "./components/Download";
 import "./App.css";
 
 export default function App() {
@@ -176,7 +177,13 @@ export default function App() {
         getBounds={getBounds}
         changeFlag={changeFlag}
       />
-     
+      <Download
+        resetButtonType={resetButtonType}
+        buttonType={buttonType}
+        pdf={samplePDF}
+        result={result}
+        bounds={bounds}
+      />
     </div>
   );
 }
