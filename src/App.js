@@ -153,7 +153,7 @@ export default function App() {
           <button onClick={undo}>Undo</button>
         </li>
         <li>
-          <button onClick={redo}>Re-do</button>
+          <button onClick={redo}>Redo</button>
         </li>
         <li>
           <button onClick={addText}>Add Text</button>

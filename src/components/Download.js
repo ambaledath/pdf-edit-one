@@ -3,12 +3,12 @@ import { PDFDocument, rgb, StandardFonts } from "pdf-lib";
 function Download(props) {
   useEffect(() => {
     if (props.buttonType === "download") {
-      modifyPdf();
+      downloadPdf();
       props.resetButtonType();
     }
   }, [props.buttonType]);
 
-  async function modifyPdf() {
+  async function downloadPdf() {
     const existingPdfBytes = await fetch(props.pdf).then((res) => {
       return res.arrayBuffer();
     });
@@ -55,11 +55,7 @@ function Download(props) {
     link.click();
   }
 
-  return (
-    <div>
-      {/*<button style = {{marginTop: "1%"}} onClick = {modifyPdf}>Download PDF</button>*/}
-    </div>
-  );
+  return <></>;
 }
 
 export default Download;
